@@ -1,0 +1,16 @@
+<h1> Add a new Restaurant </h1>
+
+<%= form_for(@restaurant) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :phonenumber %>
+  <%= f.text_field :phonenumber %>
+   <%= f.label :category %>
+  <%= f.text_field :category %>
+   <%= f.label :adress %>
+  <%= f.text_field :adress %>
+
+  <%= f.submit %>
+<% end %>
+
+<p> <%= link_to "Back to list", restaurants_path, class: "btn btn-primary" %></p>
